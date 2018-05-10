@@ -13,7 +13,7 @@ import UIKit
 */
 open class FloatyViewController: UIViewController {
     open let floaty = Floaty()
-    var statusBarStyle: UIStatusBarStyle = .default
+    var statusBarStyle: UIStatusBarStyle = .lightContent
 
     override open func viewDidLoad() {
         super.viewDidLoad()
