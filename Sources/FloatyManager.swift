@@ -57,8 +57,8 @@ open class FloatyManager: NSObject {
     private var _font: UIFont
     
     public override init() {
-        fontDescriptor = UIFont.systemFont(ofSize: 18.0).fontDescriptor
-        _font = UIFont(descriptor: fontDescriptor, size: 18)
+        fontDescriptor = UIFont.systemFont(ofSize: 20.0).fontDescriptor
+        _font = UIFont(descriptor: fontDescriptor, size: 20)
     }
     
     open var font: UIFont {

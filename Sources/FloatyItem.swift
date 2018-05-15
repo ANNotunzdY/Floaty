@@ -45,6 +45,14 @@ open class FloatyItem: UIView {
             titleLabel.textColor = titleColor
         }
     }
+    
+    @objc open var font: UIFont? {
+        didSet {
+            if let f = font {
+                titleLabel.font = f
+            }
+        }
+    }
 
     /**
      Enable/disable shadow.

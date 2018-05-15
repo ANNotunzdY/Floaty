@@ -42,15 +42,16 @@ class ViewController: UIViewController, FloatyDelegate {
         item.handler = { item in
             
         }
+        item.font = UIFont.systemFont(ofSize: 11)
 
         floaty.hasShadow = false
-        floaty.addItem(title: "I got a title")
+        floaty.addItem(title: "I got a really damn long effing title")
         floaty.addItem("I got a icon", icon: UIImage(named: "icShare"))
-        floaty.addItem("I got a handler", icon: UIImage(named: "icMap")) { item in
-            let alert = UIAlertController(title: "Hey", message: "I'm hungry...", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Me too", style: .default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
-        }
+//        floaty.addItem("I got a handler", icon: UIImage(named: "icMap")) { item in
+//            let alert = UIAlertController(title: "Hey", message: "I'm hungry...", preferredStyle: .alert)
+//            alert.addAction(UIAlertAction(title: "Me too", style: .default, handler: nil))
+//            self.present(alert, animated: true, completion: nil)
+//        }
         floaty.addItem(item: item)
         floaty.paddingX = self.view.frame.width/2 - floaty.frame.width/2
         floaty.fabDelegate = self
