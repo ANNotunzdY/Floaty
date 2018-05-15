@@ -120,7 +120,7 @@ open class FloatyItem: UIView {
             if _titleLabel == nil {
                 _titleLabel = UILabel()
                 _titleLabel?.textColor = titleColor
-                _titleLabel?.font = FloatyManager.defaultInstance().font
+                _titleLabel?.font = font ?? FloatyManager.defaultInstance().font
                 addSubview(_titleLabel!)
             }
             return _titleLabel!
