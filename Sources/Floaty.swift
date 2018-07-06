@@ -752,10 +752,12 @@ open class Floaty: UIView {
 
         var horizontalMargin = size;
         var verticalMargin = size + keyboardSize;
-        if #available(iOS 11, *) {
-            horizontalMargin += safeAreaInsets.right
-            verticalMargin += safeAreaInsets.bottom
-        }
+        
+        // mleavy: Floaty sucks. Let's not have it try (and fail) to be smart here.
+//        if #available(iOS 11, *) {
+//            horizontalMargin += safeAreaInsets.right
+//            verticalMargin += safeAreaInsets.bottom
+//        }
 
         if superview == nil {
             frame = CGRect(
